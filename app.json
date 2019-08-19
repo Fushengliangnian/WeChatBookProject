@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/read",
     "pages/read_engine/read_engine"
   ],
   "window": {
