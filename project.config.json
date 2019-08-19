@@ -9,7 +9,9 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
@@ -38,5 +40,9 @@
 			"current": -1,
 			"list": []
 		}
-	}
+	},
+
+  "urlDict": {
+    "homepage": ""
+  }
 }

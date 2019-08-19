@@ -1,0 +1,5 @@
+<!--pages/read_engine/read_engine.wxml-->
+<import src="../index/index.wxml"/>
+<text>pages/read_engine/read_engine.wxml</text>
+aaa
+<template is="navigation" data="{{ current }}" />
