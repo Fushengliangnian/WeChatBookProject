@@ -12,13 +12,16 @@ Page({
   },
 
   handleChange({ detail }) {
-    console.log(detail);
-    // wx.switchTab({
-    //   url: '../read_engine/read_engine',
-    // })
-    // wx.redirectTo({
-    //   url: '../read_engine/read_engine',
-    // })
+    let key = detail.key
+    console.log(key)
+
+    if (key == "group") {
+      var ePub = require("epub.min.js")
+      console.log(ePub)
+      console.log(111)
+
+    }
+
     this.setData({
       current: detail.key
     });
@@ -32,6 +35,7 @@ Page({
   },
 
   onLoad: function () {
+    console.log("onload")
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

@@ -18,6 +18,20 @@
     <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" count="0" title="Notice"></i-tab-bar-item>
     <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="我的"></i-tab-bar-item>
   </i-tab-bar>
+
+
+  <view wx:if="{{ current == 'homepage' }}">
+    <import src="homepage.wxml" />
+    <template is="homepage" data="{{ current }}" />
+  </view>
+
+  <view wx:elif="{{ current == 'group' }}">
+    <import src="read_engine.wxml" />
+    <template is="read_engine" data="{{ current }}" />
+  </view>
+  <view wx:elif="{{ current == 'remind' }}"></view>
+  <view wx:else="{{ current == 'mine' }}"></view>
+
 </view> 
 
 
