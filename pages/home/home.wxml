@@ -1,12 +1,13 @@
-
+<!--pages/home.wxml-->
 <template name="homepage">
+
 <view>
     <i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
       <view slot="content">内容不错</view>
       <view slot="footer">尾部内容</view>
     </i-card> 
 
-    <i-row>
+    <i-row i-class="me-row">
       <i-col span="22" i-class="col-class" offset="1">
         <i-grid>
           <i-grid-item>
@@ -21,6 +22,15 @@
         </i-grid>
       </i-col>
     </i-row>
+
+    <i-cell-group>
+      <i-cell title="只显示箭头" is-link>asd</i-cell>
+      <i-cell title="跳转到首页" is-link url="/pages/dashboard/index">asd</i-cell>
+      <i-cell title="只有 footer 点击有效" is-link url="/pages/dashboard/index" only-tap-footer>asd</i-cell>
+      <i-cell title="开关">
+          <switch slot="footer" checked />
+      </i-cell>
+    </i-cell-group>
 
 
 </view>

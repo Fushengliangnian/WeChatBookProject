@@ -8,24 +8,24 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    current: 'homepage'
+    // current: 'homepage'
   },
 
-  handleChange({ detail }) {
-    let key = detail.key
-    console.log(key)
+  // handleChange({ detail }) {
+  //   let key = detail.key
+  //   console.log(key)
 
-    if (key == "group") {
-      var ePub = require("epub.min.js")
-      console.log(ePub)
-      console.log(111)
+  //   if (key == "group") {
+  //     // var ePub = require("epub.min.js")
+  //     // console.log(ePub)
+  //     console.log(111)
 
-    }
+  //   }
 
-    this.setData({
-      current: detail.key
-    });
-  },
+  //   this.setData({
+  //     current: detail.key
+  //   });
+  // },
 
   //事件处理函数
   bindViewTap: function() {
@@ -35,7 +35,9 @@ Page({
   },
 
   onLoad: function () {
-    console.log("onload")
+    // console.log("onload")
+    // let tabBar = getTabBar()
+    // console.log(app)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

@@ -1,20 +1,18 @@
-// pages/read_engine/read_engine.js
+// pages/home.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // current: "read_engine"
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.setData({
-    //   current: key
-    // })
+
   },
 
   /**
@@ -65,17 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
-  // handleChange({ detail }) {
-  //   console.log(detail);
-  //   // wx.switchTab({
-  //   //   url: '../read_engine/read_engine',
-  //   // })
-  //   wx.redirectTo({
-  //     url: '../read_engine/read_engine',
-  //   })
-  //   this.setData({
-  //     current: detail.key
-  //   });
-  // }
 })

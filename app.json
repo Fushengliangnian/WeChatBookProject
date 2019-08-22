@@ -2,13 +2,40 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/read_engine/read_engine"
+    "pages/read_engine/read_engine",
+    "pages/home/home",
+    "pages/mine/mine",
+    "custom-tab-bar/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "小浮生",
+    "navigationBarTitleText": "刷题一分钟",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "current": "homepage",
+        "text": "题库"
+      },
+      {
+        "pagePath": "pages/read_engine/read_engine",
+        "current": "read_engine",
+        "text": "阅读器"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "current": "read_engine",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index"
+  }
 }

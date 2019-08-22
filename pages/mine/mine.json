@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "set_tab_bar": "../components/set_tab_bar/set_tab_bar"
+  }
+}

@@ -1,5 +1,22 @@
-<!--pages/read_engine/read_engine.wxml-->
-<import src="../index/index.wxml"/>
-<text>pages/read_engine/read_engine.wxml</text>
-aaa
-<template is="navigation" data="{{ current }}" />
+<template name="read_engine">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"> </script>
+  <script src="epub.min.js"></script>
+  <!-- <script>
+    var 
+      book,
+      urlPath,  
+      rendition,
+      displayed;
+
+    book = ePub(urlPath)
+    rendition = book.renderTo("area", {width: 600, height: 400})
+    displayed = rendition.displayed()
+  </script> -->
+  <view id="area" ></view>
+  aaa
+
+  <view>
+  </view>
+</template>
+<!-- <set_tab_bar></set_tab_bar> -->
+bbb

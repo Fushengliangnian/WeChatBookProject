@@ -1,6 +1,8 @@
 {
+  "navigationBarTitleText": "阅读器",
   "usingComponents": {
     "i-tab-bar": "../../dist/tab-bar/index",
-    "i-tab-bar-item": "../../dist/tab-bar-item/index"
+    "i-tab-bar-item": "../../dist/tab-bar-item/index",
+    "set_tab_bar": "../components/set_tab_bar/set_tab_bar"
   }
 }
