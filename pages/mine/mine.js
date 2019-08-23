@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // current: "mine"
+    current: "mine"
   },
 
   /**
@@ -62,5 +62,15 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  handleChange({ detail }) {
+    let key = detail.key
+    let url = key == "homepage" ? "/pages/index/index" : "/pages/" + key + "/" + key
+    this.setData({
+      current: detail.key
+    });
+    wx.switchTab({
+      url: url
+    })
+  },
 })

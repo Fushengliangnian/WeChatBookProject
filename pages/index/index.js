@@ -8,24 +8,22 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    // current: 'homepage'
+    current: 'homepage'
   },
 
-  // handleChange({ detail }) {
-  //   let key = detail.key
-  //   console.log(key)
+  handleChange({ detail }) {
+    let key = detail.key
+    let url = key == "homepage" ? "/pages/index/index" : "/pages/" + key + "/" + key
+    console.log(key)
+    wx.switchTab({
+      url: url
+    })
+    this.setData({
+      current: detail.key
+    });
 
-  //   if (key == "group") {
-  //     // var ePub = require("epub.min.js")
-  //     // console.log(ePub)
-  //     console.log(111)
 
-  //   }
-
-  //   this.setData({
-  //     current: detail.key
-  //   });
-  // },
+  },
 
   //事件处理函数
   bindViewTap: function() {

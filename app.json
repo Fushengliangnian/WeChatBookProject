@@ -18,24 +18,16 @@
     "custom": true,
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "current": "homepage",
-        "text": "题库"
+        "pagePath": "pages/index/index"
       },
       {
-        "pagePath": "pages/read_engine/read_engine",
-        "current": "read_engine",
-        "text": "阅读器"
+        "pagePath": "pages/read_engine/read_engine"
       },
       {
-        "pagePath": "pages/mine/mine",
-        "current": "read_engine",
-        "text": "我的"
+        "pagePath": "pages/mine/mine"
       }
     ]
   },
   "usingComponents": {
-    "i-tab-bar": "../../dist/tab-bar/index",
-    "i-tab-bar-item": "../../dist/tab-bar-item/index"
   }
 }

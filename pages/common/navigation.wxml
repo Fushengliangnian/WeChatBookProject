@@ -1,0 +1,8 @@
+<template name="navigation">
+  <i-tab-bar current="{{ current }}" bindchange="handleChange" fixed="true" color="#f759ab">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="题库"></i-tab-bar-item>
+    <i-tab-bar-item key="read_engine" icon="group" current-icon="group_fill" title="阅读器"></i-tab-bar-item>
+    <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" count="0" title="Notice"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="我的"></i-tab-bar-item>
+  </i-tab-bar>
+</template>

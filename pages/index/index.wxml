@@ -1,6 +1,3 @@
-<!-- <import src="../templates/navigation.wxml" />
-<template is="navigation" data="{{current: current}}" />
-a -->
 <!--index.wxml-->
 <!-- <view class="container">
   <view class="userinfo">
@@ -15,29 +12,11 @@ a -->
   </view>
 </view> -->
 
-
-<!-- <view>
-  <i-tab-bar current="{{ current }}" bindchange="handleChange" fixed="true" color="#f759ab">
-    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="题库"></i-tab-bar-item>
-    <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="阅读器"></i-tab-bar-item>
-    <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" count="0" title="Notice"></i-tab-bar-item>
-    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="我的"></i-tab-bar-item>
-  </i-tab-bar> -->
-
-  <!-- <set_tab_bar></set_tab_bar> -->
   <view>
+    <import src="../common/navigation.wxml" />
     <import src="../home/home.wxml" />
+
+    <template is="navigation" data="{{current: 'homepage'}}"/>
     <template is="homepage" data="{{ current }}" />
   </view>
 
-  <!-- <view wx:elif="{{ current == 'group' }}">
-    <import src="../read_engine/read_engine.wxml" />
-    <template is="read_engine" data="{{ current }}" />
-  </view>
-  <view wx:elif="{{ current == 'remind' }}"></view>
-  <view wx:else="{{ current == 'mine' }}"></view>
-
-</view>  -->
-
-
-<!-- <template is="navigation" data="{{ current }}" /> -->

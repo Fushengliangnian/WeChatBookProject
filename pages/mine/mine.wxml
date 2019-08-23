@@ -1,3 +1,8 @@
 <!--pages/mine/mine.wxml-->
 <text>pages/mine/mine.wxml</text>
 <!-- <set_tab_bar></set_tab_bar> -->
+<import src="../common/navigation.wxml" />
+<view>
+  <template is="navigation" data="{{current: 'mine'}}"/>
+</view>
+

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // current: "read_engine"
+    current: "read_engine"
   },
 
   /**
@@ -64,18 +64,17 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
 
-  // handleChange({ detail }) {
-  //   console.log(detail);
-  //   // wx.switchTab({
-  //   //   url: '../read_engine/read_engine',
-  //   // })
-  //   wx.redirectTo({
-  //     url: '../read_engine/read_engine',
-  //   })
-  //   this.setData({
-  //     current: detail.key
-  //   });
-  // }
+  handleChange({ detail }) {
+    let key = detail.key
+    let url = key == "homepage" ? "/pages/index/index" : "/pages/" + key + "/" + key
+    this.setData({
+      current: detail.key
+    });
+    wx.switchTab({
+      url: url
+    })
+  },
+
 })
